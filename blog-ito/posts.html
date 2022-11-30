@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Посты</title>
+</head>
+<body>
+<div style="display:inline-flex">
+    <h1>Посты</h1>
+    <button onclick="editor()">Написать пост</button>
+</div>
+<div class="post">
+    <div style="display:flow">
+        <div class="author">
+            Ivan
+        </div>
+        <div class="header">
+            Абсолюно случайный заголовок
+        </div>
+    </div>
+    <div class="content">
+        Абсолютно случайный текст для этого поста
+    </div>
+</div>
+</body>
+
+<style>
+    .post {
+        border: 5px solid black;
+        font-size: large;
+    }
+
+    .author {
+        border: 2px solid black;
+        font-size: x-large;
+    }
+
+    .header {
+        border: 3px solid black;
+        font-size: xx-large;
+    }
+</style>
+
+<script>
+    function editor() {
+        window.location.href = "/editor";
+    }
+</script>
+</html>
